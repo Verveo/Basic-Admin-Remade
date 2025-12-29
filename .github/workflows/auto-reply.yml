@@ -1,0 +1,20 @@
+name: Auto Comment on Issues
+
+on:
+  issues:
+    types: [opened] 
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Welcome message on new issue
+      uses: wow-actions/auto-comment@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        issuesOpenedComment: |
+          👋 @{{ author }} 
+          💖 Thank you for taking the time to fill out a Github Issue. We'll reply to you soon.
+          🪴 In the meantime, sit back and relax, then check back. We'll get back to you shortly.
+        issuesOpenedReactions: 'hooray, +1'
