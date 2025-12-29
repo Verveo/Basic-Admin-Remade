@@ -1,3 +1,6 @@
+> [!NOTE]
+> Tada! We've transferred Basic Admin Remade over to Verveo instead of the creators, Boopup. Don't worry, everything _should_ still work normally! Ownership of the repository is still under Boopup, however now under an organization.
+
 # Basic Admin Remade
 Welcome to the world of simpleness :earth_americas:
 
